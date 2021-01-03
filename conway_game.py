@@ -1,6 +1,6 @@
 import random, time, copy
-WIDTH = 6
-HEIGHT = 6
+WIDTH = 60
+HEIGHT = 20
 
 # Create a list of list for the cells:
 next_cells = []
@@ -14,7 +14,7 @@ for x in range(WIDTH):
     next_cells.append(column)
 
 while True:
-    print('\n\n\n\n\n')
+    print('\n\n\n')
     current_cells = copy.deepcopy(next_cells)
     for y in range(HEIGHT):
         for x in range(WIDTH):
@@ -61,4 +61,3 @@ while True:
                 next_cells[x][y] = ' '
 
     time.sleep(1) # add a 1 second pause to reduce flickering
-
